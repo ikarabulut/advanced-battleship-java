@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class StartupBust {
   private GameHelper helper = new GameHelper(); // Create a private instance variable called helper that is creating a new GameHelper object
-  private ArrayList<String> startups = new ArrayList<Startup>(); // Create a private instance variable called startups that is a new ArrayList object of Startup objects
+  private ArrayList<Startup> startups = new ArrayList<Startup>(); // Create a private instance variable called startups that is a new ArrayList object of Startup objects
   private int numOfGuesses = 0; // Create a private int instance variable called numOfGuesses and set it to 0
 
   private void setUpGame() {
@@ -17,9 +17,9 @@ public class StartupBust {
     startups.add(two);
     startups.add(three);
 
-    system.out.println("Your goal is to sink three Startups."); // Print out instructions to the game in the Command line
-    system.out.println("poniez, hacqi, cabista");
-    system.out.println("Try to sink them all in the fewest number of guesses");
+    System.out.println("Your goal is to sink three Startups."); // Print out instructions to the game in the Command line
+    System.out.println("poniez, hacqi, cabista");
+    System.out.println("Try to sink them all in the fewest number of guesses");
 
     for (Startup startup : startups) { // go through the startups ArrayList with each position named startup and a Startup object
       ArrayList<String> newLocation = helper.placeStartup(3); // create an ArrayList object called newLocation and place the return from the helper method called placeStartup
